@@ -3,7 +3,6 @@ const path = require("path");
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, "../public/static")));
 
 app.get("/next", (req, res)=>{
     res.sendFile(path.join(__dirname, "../public/template/next.html"));
